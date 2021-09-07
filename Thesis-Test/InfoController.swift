@@ -7,6 +7,8 @@
 
 import UIKit
 
+//Shows stored information that is saved from the Edit Controller, information is saved even when you leave application
+
 class InfoController: UIViewController
 {
     @IBOutlet weak var Dorm: UILabel!

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1D6DDA26E71DB90011BF08 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DD926E71DB90011BF08 /* Sort.swift */; };
+		DC1D6DDE26E71E170011BF08 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DDD26E71E170011BF08 /* Heap.swift */; };
+		DC1D6DE026E71E7D0011BF08 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DDF26E71E7D0011BF08 /* BFS.swift */; };
+		DC1D6DE226E71E9C0011BF08 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE126E71E9C0011BF08 /* Queue.swift */; };
+		DC1D6DE426E71EB10011BF08 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE326E71EB10011BF08 /* List.swift */; };
+		DC1D6DE726E71F150011BF08 /* Pqueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE626E71F150011BF08 /* Pqueue.swift */; };
 		DC77DCBB26D5307F008BF0A4 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77DCBA26D5307F008BF0A4 /* Directions.swift */; };
 		DC77DCBD26D57A0D008BF0A4 /* Traverser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77DCBC26D57A0D008BF0A4 /* Traverser.swift */; };
 		DCA05D4F26D4533E0094A45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05D4E26D4533E0094A45D /* AppDelegate.swift */; };
@@ -53,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC1D6DD926E71DB90011BF08 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		DC1D6DDD26E71E170011BF08 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		DC1D6DDF26E71E7D0011BF08 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
+		DC1D6DE126E71E9C0011BF08 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		DC1D6DE326E71EB10011BF08 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		DC1D6DE626E71F150011BF08 /* Pqueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pqueue.swift; sourceTree = "<group>"; };
 		DC77DCBA26D5307F008BF0A4 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 		DC77DCBC26D57A0D008BF0A4 /* Traverser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traverser.swift; sourceTree = "<group>"; };
 		DCA05D4B26D4533E0094A45D /* Thesis-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thesis-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,17 +124,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1D6DDB26E71DC90011BF08 /* AdjacencyGraph */ = {
+			isa = PBXGroup;
+			children = (
+				DCA05D8F26D4997D0094A45D /* graphable.swift */,
+				DCA05D8B26D499350094A45D /* vertex.swift */,
+				DCA05D8D26D4995A0094A45D /* edge.swift */,
+				DCA05D9126D499B60094A45D /* AdjacencyList.swift */,
+			);
+			path = AdjacencyGraph;
+			sourceTree = "<group>";
+		};
+		DC1D6DDC26E71DEB0011BF08 /* NorthHall */ = {
+			isa = PBXGroup;
+			children = (
+				DCA05D9726D4AAFC0094A45D /* NorthHallEdge.swift */,
+				DCA05D9326D49D120094A45D /* NorthHall.swift */,
+			);
+			path = NorthHall;
+			sourceTree = "<group>";
+		};
+		DC1D6DE526E71EBE0011BF08 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D6DE126E71E9C0011BF08 /* Queue.swift */,
+				DC1D6DE326E71EB10011BF08 /* List.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		DC1D6DE826E71F450011BF08 /* Dijkstra */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D6DDF26E71E7D0011BF08 /* BFS.swift */,
+				DC1D6DDD26E71E170011BF08 /* Heap.swift */,
+				DC1D6DE626E71F150011BF08 /* Pqueue.swift */,
+			);
+			path = Dijkstra;
+			sourceTree = "<group>";
+		};
 		DCA05D4226D4533E0094A45D = {
 			isa = PBXGroup;
 			children = (
 				DCA05D8926D494030094A45D /* Annotation.swift */,
-				DCA05D9126D499B60094A45D /* AdjacencyList.swift */,
+				DC1D6DD926E71DB90011BF08 /* Sort.swift */,
 				DC77DCBC26D57A0D008BF0A4 /* Traverser.swift */,
-				DCA05D8F26D4997D0094A45D /* graphable.swift */,
-				DCA05D9326D49D120094A45D /* NorthHall.swift */,
-				DCA05D9726D4AAFC0094A45D /* NorthHallEdge.swift */,
-				DCA05D8D26D4995A0094A45D /* edge.swift */,
-				DCA05D8B26D499350094A45D /* vertex.swift */,
+				DC1D6DDB26E71DC90011BF08 /* AdjacencyGraph */,
+				DC1D6DE826E71F450011BF08 /* Dijkstra */,
+				DC1D6DE526E71EBE0011BF08 /* Queue */,
+				DC1D6DDC26E71DEB0011BF08 /* NorthHall */,
 				DCA05D4D26D4533E0094A45D /* Thesis-Test */,
 				DCA05D6726D453430094A45D /* Thesis-TestTests */,
 				DCA05D7226D453440094A45D /* Thesis-TestUITests */,
@@ -319,13 +369,17 @@
 				DCA05D8426D466B40094A45D /* EditController.swift in Sources */,
 				DCA05D8626D466E40094A45D /* InfoController.swift in Sources */,
 				DCA05D4F26D4533E0094A45D /* AppDelegate.swift in Sources */,
+				DC1D6DDA26E71DB90011BF08 /* Sort.swift in Sources */,
 				DCA05D8E26D4995A0094A45D /* edge.swift in Sources */,
 				DCA05D9026D4997D0094A45D /* graphable.swift in Sources */,
+				DC1D6DDE26E71E170011BF08 /* Heap.swift in Sources */,
 				DCA05D5126D4533E0094A45D /* SceneDelegate.swift in Sources */,
 				DCA05D9C26D4B8EA0094A45D /* OtherRoom.swift in Sources */,
 				DCA05D9E26D4B9160094A45D /* StartPoint.swift in Sources */,
 				DCA05D8226D45D600094A45D /* MapController.swift in Sources */,
+				DC1D6DE226E71E9C0011BF08 /* Queue.swift in Sources */,
 				DCA05D9426D49D120094A45D /* NorthHall.swift in Sources */,
+				DC1D6DE426E71EB10011BF08 /* List.swift in Sources */,
 				DCA05D8C26D499350094A45D /* vertex.swift in Sources */,
 				DCA05D9826D4AAFC0094A45D /* NorthHallEdge.swift in Sources */,
 				DCA05D8A26D494030094A45D /* Annotation.swift in Sources */,
@@ -333,6 +387,8 @@
 				DCA05DA026D4BD510094A45D /* YourRoom.swift in Sources */,
 				DCA05DA226D4CCCF0094A45D /* OtherTable.swift in Sources */,
 				DC77DCBB26D5307F008BF0A4 /* Directions.swift in Sources */,
+				DC1D6DE026E71E7D0011BF08 /* BFS.swift in Sources */,
+				DC1D6DE726E71F150011BF08 /* Pqueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

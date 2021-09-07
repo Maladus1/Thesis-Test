@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Noting neccesary here, this is literally just for the start screen, no code neccesary
 class ViewController: UIViewController {
 
     @IBOutlet weak var TitleLabel: UILabel!

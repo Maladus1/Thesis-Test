@@ -7,6 +7,8 @@
 
 import UIKit
 
+//Checks to see if the room you put in for your room is valid or not. If it is not, you need to change. If it is, you can continue
+
 class YourRoom: UIViewController {
 
     @IBOutlet weak var valid: UILabel!

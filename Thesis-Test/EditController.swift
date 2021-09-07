@@ -7,6 +7,8 @@
 
 import UIKit
 
+//Allows you to edit information and add information to be stored for later use
+
 class EditController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var NameTF: UITextField!

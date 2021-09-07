@@ -161,5 +161,21 @@ class InstantiateGraphs
         NorthHall.add(.undirected, from: groundconnector, to: vending, weight: 1)
         NorthHall.add(.undirected, from: groundconnector, to: fLelevator, weight: 1)
         NorthHall.add(.undirected, from: groundconnector, to: fLStairGround, weight: 1)
+        
+        NorthHall.add(.undirected, from: fLStairGround, to: f1StairGround, weight: 1)
+        
+        NorthHall.add(.undirected, from: f1StairA, to: f2StairA, weight: 1)
+        NorthHall.add(.undirected, from: f2StairA, to: f3StairA, weight: 1)
+        NorthHall.add(.undirected, from: f3StairA, to: f4StairA, weight: 1)
+        NorthHall.add(.undirected, from: f4StairA, to: f5StairA, weight: 1)
+        NorthHall.add(.undirected, from: f5StairA, to: f6StairA, weight: 1)
+        
+        NorthHall.add(.undirected, from: f1StairB, to: f2StairB, weight: 1)
+        NorthHall.add(.undirected, from: f2StairB, to: f3StairB, weight: 1)
+        NorthHall.add(.undirected, from: f3StairB, to: f4StairB, weight: 1)
+        NorthHall.add(.undirected, from: f4StairB, to: f5StairB, weight: 1)
+        NorthHall.add(.undirected, from: f5StairB, to: f6StairB, weight: 1)
+        
+        NorthHall.description
     }
 }

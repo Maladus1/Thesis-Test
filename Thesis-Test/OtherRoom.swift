@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Allows you to select roon and transfer information
 class OtherRoom: UIViewController, UITableViewDelegate
 {
     var destination: String = ""

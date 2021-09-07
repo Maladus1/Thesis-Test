@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Dictate which room you start from
 class StartPoint: UIViewController {
 
     var destination: String = ""

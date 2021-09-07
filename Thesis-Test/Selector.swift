@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Allows you to select which room you want to end with
 class Selector: UIViewController {
 
     var identifier = ""

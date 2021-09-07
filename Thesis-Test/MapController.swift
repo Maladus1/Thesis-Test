@@ -10,10 +10,13 @@ import CoreLocation
 import CoreMotion
 import MapKit
 
+//Controls the Map portion of the app, displays an app with general locations of buildings
+
 class MapController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
 
 {
     @IBOutlet weak var Map: MKMapView!
+    @IBOutlet weak var begin: UIButton!
     let locationManager = CLLocationManager()
     override func viewDidLoad()
     {
