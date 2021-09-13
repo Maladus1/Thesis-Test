@@ -18,7 +18,7 @@ class Directions: UIViewController {
     var text: String = ""
     @IBOutlet weak var destText: UILabel!
     var startpoint: String = ""
-    @IBOutlet weak var startText: UILabel!
+    @IBOutlet weak var startText: UILabel! 
     @IBOutlet weak var Direct: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class Directions: UIViewController {
         startText.text = startpoint
         destText.text = destiny
         
-        if let edges = NorthHall.dijkstra(from: f501, to: f113) {
+        if let edges = NorthHall.dijkstra(from: f501, to: f611) {
             for edge in edges {
                 text += ("\(edge.source) -> \(edge.destination), ")
             }
@@ -201,13 +201,11 @@ class Directions: UIViewController {
         NorthHall.add(.undirected, from: f4StairB, to: f5StairB, weight: 1)
         NorthHall.add(.undirected, from: f5StairB, to: f6StairB, weight: 1)
         
-        NorthHall.add(.undirected, from: fLelevator, to: f1elevator, weight: 1)
-        NorthHall.add(.undirected, from: f1elevator, to: f2elevator, weight: 1)
-        NorthHall.add(.undirected, from: f2elevator, to: f3elevator, weight: 1)
-        NorthHall.add(.undirected, from: f3elevator, to: f4elevator, weight: 1)
-        NorthHall.add(.undirected, from: f4elevator, to: f5elevator, weight: 1)
-        NorthHall.add(.undirected, from: f5elevator, to: f6elevator, weight: 1)
-        
-        NorthHall.description
+        NorthHall.add(.undirected, from: fLelevator, to: f1elevator, weight: 100)
+        NorthHall.add(.undirected, from: f1elevator, to: f2elevator, weight: 100)
+        NorthHall.add(.undirected, from: f2elevator, to: f3elevator, weight: 100)
+        NorthHall.add(.undirected, from: f3elevator, to: f4elevator, weight: 100)
+        NorthHall.add(.undirected, from: f4elevator, to: f5elevator, weight: 100)
+        NorthHall.add(.undirected, from: f5elevator, to: f6elevator, weight: 100)
     }
 }

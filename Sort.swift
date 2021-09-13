@@ -36,11 +36,17 @@ extension Graphable {
         var priorityQueue = PriorityQueue<Vertex<Element>>(sort: { self.distance(to: $0, in: visits) < self.distance(to: $1, in: visits) })
         priorityQueue.enqueue(source)
         
-        while let visitedVertex = priorityQueue.dequeue() {
-            if visitedVertex == destination {
+        //Visited vertex is popped from the queue
+        while let visitedVertex = priorityQueue.dequeue()
+        {
+            //If the vertex is the destination, return the output of function rtoute
+            if visitedVertex == destination
+            {
                 return route(to: destination, in: visits)
             }
+            //Grabs all the edges from the vertex
             let neighbourEdges = edges(from: visitedVertex) ?? []
+            //Determines to see if the path so far is less than another path, so it can be put into the priority queue. This is used to determine the shortest path.
             for edge in neighbourEdges {
                 if let weight = edge.weight {
                     if visits[edge.destination] != nil {

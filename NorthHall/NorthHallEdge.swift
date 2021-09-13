@@ -175,7 +175,6 @@ class InstantiateGraphs
         NorthHall.add(.undirected, from: f3StairB, to: f4StairB, weight: 1)
         NorthHall.add(.undirected, from: f4StairB, to: f5StairB, weight: 1)
         NorthHall.add(.undirected, from: f5StairB, to: f6StairB, weight: 1)
-        
-        NorthHall.description
+
     }
 }

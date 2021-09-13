@@ -3,7 +3,6 @@ import Foundation
 public struct Vertex<T: Hashable>
 {
     var data: T
-    var hit: Bool = false
 }
 
 extension Vertex: Hashable
@@ -20,6 +19,6 @@ extension Vertex: Hashable
 
 extension Vertex: CustomStringConvertible {
   public var description: String {
-    return "\(data) + \(hit)"
+    return "\(data)"
   }
 }
