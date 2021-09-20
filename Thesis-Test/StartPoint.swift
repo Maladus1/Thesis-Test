@@ -10,12 +10,12 @@ import UIKit
 //Dictate which room you start from
 class StartPoint: UIViewController {
 
-    var destination: String = ""
+    var destination: Vertex<String> = null
     var startpoint: String = ""
     @IBOutlet weak var destcheck: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        destcheck.text = destination
+        destcheck.text = destination.data
     }
     @IBAction func entranceButton(_ sender: Any)
     {

@@ -8,11 +8,11 @@
 import UIKit
 import CoreMotion
 
-
 //This page allows the path to be shown from vertex to vertex
 class Directions: UIViewController {
-
-    var destiny: String = ""
+    
+    var steps: Int?
+    var destiny: Vertex<String> = null
     let pedometer = CMPedometer()
     var svertex: Vertex<String> = null
     var text: String = ""
@@ -20,6 +20,7 @@ class Directions: UIViewController {
     var startpoint: String = ""
     @IBOutlet weak var startText: UILabel! 
     @IBOutlet weak var Direct: UILabel!
+    @IBOutlet weak var steptext: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,15 +28,43 @@ class Directions: UIViewController {
         startText.text = startpoint
         destText.text = destiny
         
-        if let edges = NorthHall.dijkstra(from: f501, to: f611) {
+        if let edges = NorthHall.dijkstra(from: f101, to: f611) {
             for edge in edges {
                 text += ("\(edge.source) -> \(edge.destination), ")
             }
         }
-        
         Direct.text = text
+        
+        isPedometerAvailable()
     }
     
+    func isPedometerAvailable()
+    {
+        if InitializePedometer()
+        {
+            guard let startDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())
+            else
+            {
+                return
+            }
+            
+            pedometer.queryPedometerData(from: startDate, to: Date()) {
+                (data, error) in
+                guard let data = data, error == nil else {return}
+                
+                self.steps = data.numberOfSteps.intValue
+            }
+            if self.steps != nil
+            {
+                steptext.text = "\(self.steps ?? 0)"
+            }
+        }
+    }
+    
+    func InitializePedometer() -> Bool
+    {
+        return CMPedometer.isPedometerEventTrackingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable()
+    }
     func InstantiateNorth()
     {
         NorthHall.add(.undirected, from: f612, to: f6endconnect, weight: 1)
