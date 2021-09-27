@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Note: NEEDS OVERHAUL JUST LIKE THE OTHER TABLE
 //Allows you to select roon and transfer information
 class OtherTable: UIViewController, UITableViewDelegate
 {

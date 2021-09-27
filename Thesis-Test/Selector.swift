@@ -10,38 +10,40 @@ import UIKit
 //Allows you to select which room you want to end with
 class Selector: UIViewController {
 
-    var identifier = ""
+    var identifier: Vertex<String> = null
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
     @IBAction func RHD(_ sender: Any)
     {
-        identifier = "RHD"
+        identifier = RHDV
     }
     @IBAction func Vending(_ sender: Any)
     {
-        identifier = "vending"
+        identifier = vending
     }
     @IBAction func Trash(_ sender: Any)
     {
-        identifier = "Trash"
+        identifier = f3Trash
     }
     @IBAction func Lounge(_ sender: Any)
     {
-        identifier = "Lounge"
+        identifier = f2Lounge
+        
     }
     @IBAction func Mailbox(_ sender: Any)
     {
-        identifier = "mailbox"
+        identifier = mail
     }
     @IBAction func Kitchen(_ sender: Any)
     {
-        identifier = "Kitchen"
+        identifier = f2Kitchen
+        
     }
     @IBAction func Laundry(_ sender: Any)
     {
-        identifier = "Laundry"
+        identifier = f2Laundry
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)

@@ -11,7 +11,7 @@ import UIKit
 class StartPoint: UIViewController {
 
     var destination: Vertex<String> = null
-    var startpoint: String = ""
+    var startpoint: Vertex<String> = null
     @IBOutlet weak var destcheck: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class StartPoint: UIViewController {
     }
     @IBAction func entranceButton(_ sender: Any)
     {
-        startpoint = "entrance"
+        startpoint = entrance
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {

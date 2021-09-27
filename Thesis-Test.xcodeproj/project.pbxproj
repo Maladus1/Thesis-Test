@@ -13,8 +13,6 @@
 		DC1D6DE226E71E9C0011BF08 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE126E71E9C0011BF08 /* Queue.swift */; };
 		DC1D6DE426E71EB10011BF08 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE326E71EB10011BF08 /* List.swift */; };
 		DC1D6DE726E71F150011BF08 /* Pqueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6DE626E71F150011BF08 /* Pqueue.swift */; };
-		DC38D85026F9164200EA81BE /* Thesis Update 4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC38D84F26F9164200EA81BE /* Thesis Update 4.pdf */; };
-		DC6DE6C226EFB79600C7DDC6 /* Thesis Update 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC6DE6C126EFB79600C7DDC6 /* Thesis Update 3.pdf */; };
 		DC77DCBB26D5307F008BF0A4 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77DCBA26D5307F008BF0A4 /* Directions.swift */; };
 		DCA05D4F26D4533E0094A45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05D4E26D4533E0094A45D /* AppDelegate.swift */; };
 		DCA05D5126D4533E0094A45D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05D5026D4533E0094A45D /* SceneDelegate.swift */; };
@@ -40,6 +38,8 @@
 		DCA05D9E26D4B9160094A45D /* StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05D9D26D4B9160094A45D /* StartPoint.swift */; };
 		DCA05DA026D4BD510094A45D /* YourRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05D9F26D4BD510094A45D /* YourRoom.swift */; };
 		DCA05DA226D4CCCF0094A45D /* OtherTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA05DA126D4CCCF0094A45D /* OtherTable.swift */; };
+		DCC4926627020FE70070B315 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4926527020FE70070B315 /* CustomTableViewCell.swift */; };
+		DCC49268270226390070B315 /* Thesis Update 5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCC49267270226390070B315 /* Thesis Update 5.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,6 @@
 		DC1D6DE126E71E9C0011BF08 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		DC1D6DE326E71EB10011BF08 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		DC1D6DE626E71F150011BF08 /* Pqueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pqueue.swift; sourceTree = "<group>"; };
-		DC38D84F26F9164200EA81BE /* Thesis Update 4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Thesis Update 4.pdf"; sourceTree = "<group>"; };
-		DC6DE6C126EFB79600C7DDC6 /* Thesis Update 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Thesis Update 3.pdf"; sourceTree = "<group>"; };
 		DC77DCBA26D5307F008BF0A4 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 		DCA05D4B26D4533E0094A45D /* Thesis-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thesis-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA05D4E26D4533E0094A45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		DCA05D9D26D4B9160094A45D /* StartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPoint.swift; sourceTree = "<group>"; };
 		DCA05D9F26D4BD510094A45D /* YourRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRoom.swift; sourceTree = "<group>"; };
 		DCA05DA126D4CCCF0094A45D /* OtherTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTable.swift; sourceTree = "<group>"; };
+		DCC4926527020FE70070B315 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DCC49267270226390070B315 /* Thesis Update 5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Thesis Update 5.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +168,7 @@
 		DCA05D4226D4533E0094A45D = {
 			isa = PBXGroup;
 			children = (
-				DC38D84F26F9164200EA81BE /* Thesis Update 4.pdf */,
-				DC6DE6C126EFB79600C7DDC6 /* Thesis Update 3.pdf */,
+				DCC49267270226390070B315 /* Thesis Update 5.pdf */,
 				DCA05D8926D494030094A45D /* Annotation.swift */,
 				DC1D6DD926E71DB90011BF08 /* Sort.swift */,
 				DC1D6DDB26E71DC90011BF08 /* AdjacencyGraph */,
@@ -201,6 +200,7 @@
 				DCA05D5226D4533E0094A45D /* ViewController.swift */,
 				DC77DCBA26D5307F008BF0A4 /* Directions.swift */,
 				DCA05D9B26D4B8EA0094A45D /* OtherRoom.swift */,
+				DCC4926527020FE70070B315 /* CustomTableViewCell.swift */,
 				DCA05DA126D4CCCF0094A45D /* OtherTable.swift */,
 				DCA05D9F26D4BD510094A45D /* YourRoom.swift */,
 				DCA05D8126D45D600094A45D /* MapController.swift */,
@@ -339,9 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA05D5E26D453430094A45D /* LaunchScreen.storyboard in Resources */,
-				DC6DE6C226EFB79600C7DDC6 /* Thesis Update 3.pdf in Resources */,
 				DCA05D5B26D453430094A45D /* Assets.xcassets in Resources */,
-				DC38D85026F9164200EA81BE /* Thesis Update 4.pdf in Resources */,
+				DCC49268270226390070B315 /* Thesis Update 5.pdf in Resources */,
 				DCA05D5626D4533E0094A45D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +384,7 @@
 				DCA05D9426D49D120094A45D /* NorthHall.swift in Sources */,
 				DC1D6DE426E71EB10011BF08 /* List.swift in Sources */,
 				DCA05D8C26D499350094A45D /* vertex.swift in Sources */,
+				DCC4926627020FE70070B315 /* CustomTableViewCell.swift in Sources */,
 				DCA05D9826D4AAFC0094A45D /* NorthHallEdge.swift in Sources */,
 				DCA05D8A26D494030094A45D /* Annotation.swift in Sources */,
 				DCA05D5926D4533F0094A45D /* Thesis_Test.xcdatamodeld in Sources */,
