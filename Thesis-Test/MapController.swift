@@ -13,13 +13,16 @@ import MapKit
 //Controls the Map portion of the app, displays an app with general locations of buildings
 
 class MapController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
-
 {
+
     @IBOutlet weak var Map: MKMapView!
     @IBOutlet weak var begin: UIButton!
+    var lat: Double = 0.0
+    var lon: Double = 0.0
     let locationManager = CLLocationManager()
     override func viewDidLoad()
     {
+        begin.isHidden = false
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
         if (CLLocationManager.locationServicesEnabled())
@@ -38,6 +41,21 @@ class MapController: UIViewController, CLLocationManagerDelegate, MKMapViewDeleg
         Map.isZoomEnabled = true
         Map.isScrollEnabled = true
         Map.showsUserLocation = true
+    }
+    
+    func locationManager(_ manager:CLLocationManager, didUpdatelocations location:[CLLocation])
+    {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else {return}
+        let lat = Double(locValue.latitude)
+        let lon = Double(locValue.longitude)
+     //   if (lat > 40.924926 && lat < 40.925546 && lon > -73.789095 && lon < -73.788607)
+       // {
+     //       begin.isHidden = false
+     //   }
+     //   else
+     //   {
+     //       begin.isHidden = true
+     //   }
     }
     func followUserLocation()
     {

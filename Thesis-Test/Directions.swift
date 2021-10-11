@@ -29,7 +29,7 @@ class Directions: UIViewController {
         startText.text = startpoint.data
         destText.text = destiny.data
         
-        if let edges = NorthHall.dijkstra(from: f101, to: f611) {
+        if let edges = NorthHall.dijkstra(from: startpoint, to: destiny) {
             for edge in edges {
                 text += ("\(edge.source) -> \(edge.destination), ")
             }
@@ -43,33 +43,14 @@ class Directions: UIViewController {
     {
         if InitializePedometer()
         {
-            guard let startDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())
-            else
-            {
-                return
-            }
-            
-            pedometer.queryPedometerData(from: startDate, to: Date()) {
-                (data, error) in
-                guard let data = data, error == nil else {return}
-                
-                self.steps = data.numberOfSteps.intValue
-            }
-            if self.steps != nil
-            {
-                steptext.text = "\(self.steps ?? 0)"
-            }
-        }
-    }
-    
-    private func CountSteps()
-    {
-        pedometer.startUpdates(from: Date())
-        {
-            [weak self] pedometerData, error in guard let pedometerData = pedometerData, error == nil else {return}
-            
-            DispatchQueue.main.async{
-                self?.steptext.text = pedometerData.numberOfSteps.stringValue
+            if CMPedometer.isStepCountingAvailable() {
+                pedometer.startUpdates(from: Date()) { pedometerData, error in
+                    guard let pedometerData = pedometerData, error == nil else { return }
+                    
+                    DispatchQueue.main.async {
+                        self.steptext.text = "\(pedometerData.numberOfSteps.intValue)"
+                    }
+                }
             }
         }
     }

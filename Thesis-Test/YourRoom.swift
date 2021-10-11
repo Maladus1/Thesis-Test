@@ -100,7 +100,7 @@ class YourRoom: UIViewController {
         if segue.destination is StartPoint
         {
             let vc = segue.destination as? StartPoint
-            vc?.destination = roomnumber ?? null
+            //vc?.destination = roomnumber ?? null
         }
     }
 }

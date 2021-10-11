@@ -26,24 +26,24 @@ extension OtherRoom: UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int
     {
-        return rooms.count
+        return vecrooms.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = rooms[indexPath.row]
+        cell.textLabel?.text = vecrooms[indexPath.row].data
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        if let vcs = storyboard?.instantiateViewController(identifier: "Direction") as? Directions
+        if let vc = storyboard?.instantiateViewController(identifier: "Destination") as? Directions
         {
-            vcs.startpoint = vecrooms[indexPath.row]
-            vcs.destiny = destination
-            self.navigationController?.pushViewController(vcs, animated: true)
+            vc.startpoint = vecrooms[indexPath.row]
+            vc.destiny = destination
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

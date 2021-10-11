@@ -9,7 +9,6 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
-    @IBOutlet var cellView: UIView!
     @IBOutlet var cellImage: UIImageView!
     @IBOutlet var cellText: UILabel!
     var vertecies: Vertex<String> = null
