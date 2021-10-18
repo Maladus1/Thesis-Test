@@ -496,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdi-ro-pZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.95652173913049" y="2151.5625"/>
+            <point key="canvasLocation" x="1094" y="2152"/>
         </scene>
         <!--Your Room-->
         <scene sceneID="kKh-hm-3jo">
@@ -838,7 +838,7 @@
         <!--Directions-->
         <scene sceneID="w9W-PS-EoK">
             <objects>
-                <viewController storyboardIdentifier="Direction" id="2HR-g9-r7N" customClass="Directions" customModule="Thesis_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Directions" id="2HR-g9-r7N" customClass="Directions" customModule="Thesis_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1WT-6g-GZ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -954,21 +954,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-BY-LzT">
-                                <rect key="frame" x="20" y="144" width="374" height="698"/>
+                                <rect key="frame" x="20" y="188" width="374" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="I2a-DQ-v1P">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" id="I2a-DQ-v1P">
                                         <rect key="frame" x="0.0" y="24.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I2a-DQ-v1P" id="X68-I7-bBn">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2HR-g9-r7N" kind="presentation" identifier="Info" modalPresentationStyle="fullScreen" id="nct-CZ-4Vq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84N-pN-9ar">
-                                <rect key="frame" x="334" y="64" width="60" height="60"/>
+                                <rect key="frame" x="334" y="108" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="YBi-zs-wQk"/>
@@ -1023,10 +1026,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YXM-li-RCg"/>
+        <segue reference="s7Z-Sg-dcA"/>
+        <segue reference="nct-CZ-4Vq"/>
         <segue reference="0ja-Rl-M3m"/>
-        <segue reference="hrU-bi-TyI"/>
-        <segue reference="7Qk-wd-AFC"/>
+        <segue reference="8uZ-1n-OLd"/>
+        <segue reference="z7f-YP-0BX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iona" width="1024" height="576"/>
