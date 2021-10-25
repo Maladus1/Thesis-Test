@@ -35,7 +35,6 @@ class Directions: UIViewController {
             }
         }
         Direct.text = text
-        
         isPedometerAvailable()
     }
     
@@ -210,7 +209,7 @@ class Directions: UIViewController {
         NorthHall.add(.undirected, from: groundconnector, to: fLelevator, weight: 9)
         NorthHall.add(.undirected, from: groundconnector, to: fLStairGround, weight: 2)
         
-        NorthHall.add(.undirected, from: fLStairGround, to: f1StairGround, weight: 22)
+        NorthHall.add(.undirected, from: fLStairGround, to: f1StairGround, weight: 35)
         
         NorthHall.add(.undirected, from: f1StairA, to: f2StairA, weight: 22)
         NorthHall.add(.undirected, from: f2StairA, to: f3StairA, weight: 22)

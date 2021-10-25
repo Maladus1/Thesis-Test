@@ -51,8 +51,8 @@ extension OtherRoom: UITableViewDataSource
             if let indexPath = self.tableView.indexPathForSelectedRow
             {
                 let vc = segue.destination as? Directions
-                vc?.destiny = destination
-                vc?.startpoint = vecrooms[indexPath.row]
+                vc?.destiny = vecrooms[indexPath.row]
+                vc?.startpoint = start
             }
         }
     }

@@ -10,8 +10,8 @@ import UIKit
 //Dictate which room you start from
 class StartPoint: UIViewController {
 
-    var destination: Vertex<String> = null
     var startpoint: Vertex<String> = null
+    var destination: Vertex<String> = null
     @IBOutlet weak var destcheck: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +19,14 @@ class StartPoint: UIViewController {
     }
     @IBAction func entranceButton(_ sender: Any)
     {
-        startpoint = entrance
+        destination = entrance
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.destination is OtherRoom
         {
             let vc = segue.destination as? OtherRoom
-            vc?.destination = destination
+            vc?.start = startpoint
         }
         if segue.destination is Directions
         {

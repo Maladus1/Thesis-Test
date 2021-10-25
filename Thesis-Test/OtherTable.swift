@@ -43,7 +43,7 @@ extension OtherTable: UITableViewDataSource
     {
         if let vc = storyboard?.instantiateViewController(identifier: "Destination") as? StartPoint
         {
-            vc.destination = vecrooms[indexPath.row]
+            vc.startpoint = vecrooms[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

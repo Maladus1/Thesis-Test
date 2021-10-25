@@ -587,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SP-Na-ctU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="1430"/>
+            <point key="canvasLocation" x="1093" y="1430"/>
         </scene>
         <!--Info Controller-->
         <scene sceneID="IeM-eV-gXH">
@@ -833,7 +833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hz2-SE-js7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.95652173913049" y="71.651785714285708"/>
+            <point key="canvasLocation" x="987" y="72"/>
         </scene>
         <!--Directions-->
         <scene sceneID="w9W-PS-EoK">
@@ -1004,7 +1004,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYr-UC-yhp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005.7971014492755" y="2848.6607142857142"/>
+            <point key="canvasLocation" x="1093" y="2849"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kqe-XZ-chf">
@@ -1029,8 +1029,8 @@
         <segue reference="s7Z-Sg-dcA"/>
         <segue reference="nct-CZ-4Vq"/>
         <segue reference="0ja-Rl-M3m"/>
-        <segue reference="8uZ-1n-OLd"/>
-        <segue reference="z7f-YP-0BX"/>
+        <segue reference="ypX-xo-ZPs"/>
+        <segue reference="HEF-Cm-kWK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iona" width="1024" height="576"/>
